@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="Testonie(failed)" parallel="tests">
+    <parameter name="browserName" value="ie"/>
+    <classes>
+      <class name="crossbrowser.TestNGMultibrowserDemo">
+        <methods>
+          <include name="teardown"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- crossbrowser.TestNGMultibrowserDemo -->
+    </classes>
+  </test> <!-- Testonie(failed) -->
+</suite> <!-- Failed suite [Suite] -->
