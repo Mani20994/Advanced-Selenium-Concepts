@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21903" started-at="2018-11-13T11:25:20Z" finished-at="2018-11-13T11:25:42Z">
+  <suite name="Default suite" duration-ms="13211" started-at="2018-11-20T11:03:42Z" finished-at="2018-11-20T11:03:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21903" started-at="2018-11-13T11:25:20Z" finished-at="2018-11-13T11:25:42Z">
-      <class name="WindowHandle">
-        <test-method status="PASS" signature="HandleWindow()[pri:0, instance:WindowHandle@167fdd33]" name="HandleWindow" duration-ms="21860" started-at="2018-11-13T11:25:20Z" finished-at="2018-11-13T11:25:42Z">
+    <test name="Default test" duration-ms="13211" started-at="2018-11-20T11:03:42Z" finished-at="2018-11-20T11:03:55Z">
+      <class name="DownloadFile">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:DownloadFile@2d8f65a4]" name="setUp" is-config="true" duration-ms="3215" started-at="2018-11-20T11:03:42Z" finished-at="2018-11-20T11:03:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HandleWindow -->
-      </class> <!-- WindowHandle -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="downloadFileTest()[pri:0, instance:DownloadFile@2d8f65a4]" name="downloadFileTest" duration-ms="9294" started-at="2018-11-20T11:03:46Z" finished-at="2018-11-20T11:03:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadFileTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DownloadFile@2d8f65a4]" name="tearDown" is-config="true" duration-ms="668" started-at="2018-11-20T11:03:55Z" finished-at="2018-11-20T11:03:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DownloadFile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

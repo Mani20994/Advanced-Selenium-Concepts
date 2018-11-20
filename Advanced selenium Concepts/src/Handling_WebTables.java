@@ -92,64 +92,15 @@ public static void main(String[] args)  {
 		 System.out.println(colText);
 	}
 }
+}
+	
+	
+		
+		
+	
+	
 
-public static void main11(String[] args)  {
-System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-	WebDriver driver=new ChromeDriver();
-	driver.manage().window().maximize();
-	
-	//URL
-	driver.get("https://www.freecrm.com/");
-	driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("naveenk");
-	driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("test@123");
-	
-	driver.findElement(By.xpath("//input[@value='Login']")).click();
-	driver.switchTo().frame("mainpanel");
-	
-	driver.findElement(By.xpath("//input[@value='Login']")).click();
-	driver.findElement(By.xpath("//*[@id=\"navmenu\"]/ul/li[4]/a")).click();
-	String BeforeXpath="//*[@id=\"vContactsForm\"]/table/tbody/tr[";
-	String AfterXpath="]/td[2]";
-	for(int i=4; i<=7;i++) {
-		String name= driver.findElement(By.xpath(BeforeXpath +i +AfterXpath)).getText();
-		System.out.println(name);
-		if(name.contains("test2 test2")) {
-			//*[@id="vContactsForm"]/table/tbody/tr[6]/td[1]/input
-			driver.findElement(By.xpath("//*[@id=\"vContactsForm\"]/table/tbody/tr[" +i+"]/td[1]/input" )).click();
-				
-		}
-		}
-}
-	
-	
-		
-		
-	
-	public static void main1(String[] args)  {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		//URL
-		driver.get("https://www.cricbuzz.com/live-cricket-scores/21208/pak-vs-nz-1st-test-pakistan-v-new-zealand-in-uae-2018");
-//*[@id="matchCenter"]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/a
-//*[@id="matchCenter"]/div[3]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/a
-	
-	
-	String BeforeXpath1="//*[@id=\"matchCenter\"]/div[3]/div[2]/div[1]/div[2]/div[1]/div[";
-	String AfterXpath1="]/div[1]/a";
-	for(int i=1; i<=2;i++) {
-		String name= driver.findElement(By.xpath(BeforeXpath1 +i +AfterXpath1)).getText();
-		System.out.println(name);
-		if(name.contains("Kane Williamson")) {
-			//*[@id="matchCenter"]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/a
-			driver.findElement(By.xpath("//*[@id=\"matchCenter\"]/div[3]/div[2]/div[1]/div[2]/div[1]/div[" +i+ "]/div[1]/a")).click();
-			
-		}
-		
-	}
 
-}
-}
+
 
  
